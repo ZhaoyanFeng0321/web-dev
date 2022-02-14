@@ -1,0 +1,347 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+/*Rotate a list*/
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-2 {
+    transform: rotate(-10deg);
+    width: 80px;
+    background-color: cornflowerblue;
+    color: white;
+}
+/*Rotating a list item*/
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-list-items-2 li {
+    width: 80px;
+    text-align: left;
+}
+
+.rotate-list-items-2 li:nth-child(1) {
+    transform: rotate(20deg);
+    background-color: plum;
+}
+
+.rotate-list-items-2 li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: palevioletred;
+    color: white;
+}
+
+.rotate-list-items-2 li:nth-child(3) {
+    transform: rotate(-20deg);
+    background-color: purple;
+    color: white;
+}
+
+/*Rotating images*/
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-image-30 {
+    transform: rotate(30deg);
+}
+
+/*Rotate a table*/
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);
+}
+
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+/*style from 2*/
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;
+}
+
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;
+}
+
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+/*Linear gradients*/
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-linear-2 {
+    background: linear-gradient(pink, mediumpurple);
+    text-align: center;
+    width: 300px;
+    height: 120px;
+    color: cornsilk;
+}
+/*Radial gradients*/
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial-2 {
+    background: radial-gradient(royalblue, rebeccapurple);
+    width: 200px;
+    height: 200px;
+    color: whitesmoke;
+}
+/*Positioning radial gradients*/
+.gradients-positioned {
+    background: radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.gradients-positioned-2 {
+    background: radial-gradient(at bottom right, coral, hotpink);
+    width: 300px;
+    height: 200px;
+    color: white;
+}
+/*Animations*/
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.animation-keyframes-2 {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein-2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 300px;
+    height: 200px;
+    background-color: #61dafb;
+    color: white;
+}
+
+@keyframes slidein-2 {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 300px;
+        height: 200px;
+        background-color: dodgerblue;
+        color: lightpink;
+    }
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 200%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: powderblue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: mediumspringgreen;
+        color: white;
+    }
+}
+/*Flex*/
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px lightgoldenrodyellow solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: darkseagreen;
+}
+.flex-box-2 {
+    background-color: lightpink;
+    color: chocolate;
+}
+.flex-box-3 {
+    background-color: lightskyblue;
+    color: midnightblue ;
+}
+/*Aligning flex elements horizontally*/
+.flex-container-1 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-container-2 {
+    display: flex;
+    justify-content: center;
+}
+.flex-container-3 {
+    display: flex;
+    justify-content: end;
+}
+.flex-container-4 {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container-5 {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-6 {
+    display: flex;
+}
+.flex-container-6 > .flex-box {
+    flex-basis: 100%;
+}
+/*Media queries*/
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: lightpink;
+    }
+    h2 {
+        color: crimson;
+        font-weight: bold;
+    }
+    h3 {
+        color: crimson;
+        font-weight: bold;
+    }
+    p {
+        font-style: italic;
+    }
+    .media-query {
+        background-color: cornsilk;
+        color: darkslategray;
+        padding: 10px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: cadetblue;
+        color: white;
+    }
+    h2 {
+        color: greenyellow;
+        font-weight: bold;
+    }
+    h3 {
+        color: greenyellow;
+        font-weight: bold;
+    }
+    .media-query {
+        padding: 10px;
+        background-color: lightgreen;
+        font-family: "Comic Sans MS";
+        color: brown;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    body {
+        background-color: navajowhite;
+    }
+    h2 {
+        color: coral;
+        font-weight: bold;
+    }
+    h3 {
+        color: coral;
+        font-weight: bold;
+    }
+    .media-query {
+        padding: 10px;
+        background-color: salmon;
+        color: white;
+    }
+}
+

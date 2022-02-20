@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Deploys to Netify: https://lucid-clarke-411811.netlify.app/index.html
+
 ## Available Scripts
 
 In the project directory, you can run:

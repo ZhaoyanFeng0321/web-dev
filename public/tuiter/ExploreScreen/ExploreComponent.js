@@ -40,7 +40,7 @@ const ExploreComponent = () => {
 
   <div id="wd-explore-feed">
     <div id="wd-explore-featured">
-      <h3>SpaceX's Starship</h3>
+      <h4>SpaceX's Starship</h4>
     </div>
 
     ${PostSummaryList()}

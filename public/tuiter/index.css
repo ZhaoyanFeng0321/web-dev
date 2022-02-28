@@ -1,187 +1,182 @@
-.wd-margin {
-    margin: 16px;
+:root {
+    --wd-light-grey: #5b656b;
+    --wd-mid-grey: rgb(47, 51, 54);
+    --wd-dark-grey: #1F1F1F;
+    --wd-interactive-blue: rgb(29, 161, 242);
 }
 
-.wd-border-color {
-    border-color: #475154;
+p {
+    margin: 0;
 }
 
-.wd-bg-color-black {
+.wd-color-white {
+    color: white;
+}
+
+.wd-color-light-grey {
+    color: var(--wd-light-grey);
+}
+
+.wd-color-mid-grey {
+    color: var(--wd-mid-grey);
+}
+
+.wd-color-dark-grey {
+    color: var(--wd-dark-grey);
+}
+
+.wd-color-interactive-blue {
+    color: var(--wd-interactive-blue);
+}
+
+body {
     background-color: black;
+    color: white;
+    font-family: sans-serif;
 }
 
-.wd-fg-color {
-    color: rgb(110, 118, 125);
+#tuiter-nav {
+    padding: 1em 1em 0;
 }
 
-.wd-rounded-corners-all-around {
-    border-radius: 50px;
+#tuiter-nav .list-group {
+    max-width: fit-content;
+    margin: 0 0 0 auto;
 }
 
-.wd-font-highlight {
-    color: rgb(29, 161, 242);
-    font-weight: bold;
+#tuiter-nav .list-group-item {
+    background-color: var(--wd-dark-grey);
+    border: none;
+    color: white;
+    font-weight: 300;
+    padding: 0.75em 1em;
+}
+
+#tuiter-nav .list-group-item:first-of-type {
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+#tuiter-nav .list-group-item:last-of-type {
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#tuiter-nav .active {
+    background-color: var(--wd-interactive-blue);
+    font-weight: 700;
+}
+
+#tuiter-nav .btn-primary {
+    border-radius: 2em;
+    background-color: var(--wd-interactive-blue);
+    padding: 0.5em 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#tuiter-nav i {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+}
+
+#tuiter-nav span {
+    margin-right: 0.5em;
+}
+
+#tuiter-follow-recommendations .card {
+    width: fit-content;
+    color: white;
+    background-color: var(--wd-dark-grey);
+    margin: 1em;
+    padding: 1em;
+}
+
+#tuiter-follow-recommendations h5 {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+#tuiter-follow-recommendations a {
     text-decoration: none;
+    font-size: 14px;
 }
 
-.wd-font {
-    font-family: Arial;
-    font-size: 15px;
-    line-height: 20px;
-    color: rgb(110, 118, 125);
-    text-decoration: none;
-}
-
-.wd-table {
-    /*text-align: center;*/
-    height: 44px;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-}
-
-.wd-col-padding {
-    padding: 16px;
-}
-
-.wd-table-highlight {
-    height: 44px;
-    border-bottom: 5px solid rgb(29, 161, 242);
-}
-
-.wd-border {
-    border: 1px solid rgb(47, 51, 54);
-}
-.wd-border-0 {
-    border-bottom: 2px solid rgb(47, 51, 54);
-}
-
-.wd-padded-top-left {
-    padding-top: 20px;
-    padding-left: 16px;
-}
-
-.wd-font-blue {
-    color: blue;
-}
-.wd-font-bold{
-    font-weight: bold;
-    color: gainsboro;
-}
-.wd-font-post{
-    font-size: 13px;
-    font-weight: normal;
-}
-.wd-text-input {
+.tuiter-follow-recommendation-item {
     display: flex;
-    z-index: 3;
-    height: 30px;
-    background-color: grey;
-    border: 1px solid transparent;
-    border-radius: 24px;
-    width: 80%;
-    font: 16px arial, sans-serif;
-    padding: 5px 4px 0 20px;
-    float: left;
-    vertical-align: middle;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
 
+.tuiter-follow-recommendation-item img {
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
+    object-fit: cover;
 }
-.wd-tuit{
-    width: 75%;
-    padding: 16px;
 
+.tuiter-follow-recommendation-item div {
+    margin: 0 0.5em;
+    text-align: left;
+    color: var(--wd-light-grey);
 }
-.wd-unlist {
-    list-style-type: none;
-}
-.wd-float-right {
-    position: center;
-    float: right;
-    height: 30px;
-    margin: 12px;
-    padding: 5px 12px 0 20px;
-    vertical-align: middle;
-}
-.wd-grid-row {
-    clear: both;
-}
-.wd-container {
+
+.profile-summary {
     display: flex;
     align-items: center;
-}
-.wd-right-ele {
-    width: 25%;
-}
-.wd-right-ele img {
-    /*float: right;*/
-    border-radius: 20px;
-    float: right;
-    height: 100px;
-    width: 100px;
+    font-size: 14px;
 }
 
-.wd-padded-bm {
-    padding: 12px 0px 12px 16px;
+.profile-summary img {
+    margin-right: 0.5em;
 }
-.wd-no-pad-right {
-    padding-right: 0;
-}
-.wd-font-20 {
-    font-size: 20px;
-    font-weight: bold;
+
+.profile-summary b {
     color: white;
 }
-.wd-container-bm{
+
+.tuiter-follow-recommendation-item .btn {
+    color: white;
+    background-color: var(--wd-interactive-blue);
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 14px;
+}
+
+.wd-post-summary__post {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 0;
 }
-.wd-left-element {
-    float: left;
+
+.wd-post-summary__post:last-child {
+    padding-bottom: 1em;
 }
-.wd-left-element img{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+
+.wd-post-summary__image {
+    margin: 3px;
+    width: 4em;
+    height: 4em;
+    border-radius: 0.5em;
+    object-fit: cover;
+    object-position: center;
 }
-.wd-wid-max {
-    max-width: 506px;
+
+.wd-post__annotations {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
 }
-.wd-pad-2 {
-    padding: 12px 16px 12px 12px;
-}
-.wd-pad-bt {
-    padding-bottom: 12px;
-}
-.wd-fg-white {
+
+.wd-post__author {
+    font-size: 14px;
     color: white;
+    font-weight: 500;
 }
-.wd-post-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: 1px solid lightgrey;
-    width: 504px;
-    height: 264px;
-}
-.wd-post-text {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px solid lightgrey;
-    width: 504px;
-    border-top-style: none;
-}
-.wd-pad-12 {
-    padding: 12px;
-}
-.wd-icon {
-    width: 15px;
-    height: 15px;
-    padding-right: 12px;
-}
-.wd-font-none-dec {
-    text-decoration: none;
-    color: lightgrey;
-}
-.wd-grayscale { filter: grayscale(100%); }
-.wd-pink {
-    color: #D42A87;
+
+.wd-post__title {
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 3px;
 }

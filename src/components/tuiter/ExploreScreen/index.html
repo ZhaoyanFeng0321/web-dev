@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8"/>
+    <title>Explore screen</title>
+</head>
+
+<body>
+<a href="#" onClick="javascript :history.back(-1);">Back</a>
+
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
+<script>
+    window.addEventListener("hashchange", function () {
+        let allTabs = document.querySelectorAll(".nav-link");
+        allTabs.forEach((element) => element.classList.remove("active"));
+
+        let hash = window.location.hash;
+        document.querySelector(`a[href='${hash}'`).classList.add("active");
+    });
+</script>
+</body>
+</html>

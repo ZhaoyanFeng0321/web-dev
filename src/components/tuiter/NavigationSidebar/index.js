@@ -3,9 +3,7 @@ import NavItem from "./NavItem";
 import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
-    {
-        active = 'Explore'
-    }) => {
+    {active}) => {
     return (
             <div>
                 <div className="d-none d-xxl-block">

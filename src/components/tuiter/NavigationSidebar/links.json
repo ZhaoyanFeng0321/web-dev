@@ -1,5 +1,5 @@
 [
-  {"label": "Home", "icon": "fas fa-home", "href": "home.html", "path": "/tuiter/home"},
+  {"label": "Home", "icon": "fas fa-home", "href": "home.html", "path": "/tuiter/"},
   {"label": "Explore", "icon": "fas fa-hashtag ", "href": "explore.html", "path": "/tuiter/explore"},
   {"label": "Notifications", "icon": "fas fa-bell", "href": "notifications.html", "path": "/tuiter/notifications"},
   {"label": "Messages", "icon": "fas fa-inbox", "href": "messages.html", "path": "/tuiter/messages"},

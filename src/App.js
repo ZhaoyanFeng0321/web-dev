@@ -8,39 +8,69 @@ import {BrowserRouter, Route, Routes}
     from "react-router-dom";
 
 import './App.css';
-import Bookmarks from "./components/tuiter/pages/bookmarks";
-import HomeScreen from "./components/tuiter/HomeScreen";
+import HomeScreen from "./components/tuiter/home-screen";
 import ExploreScreen from "./components/tuiter/ExploreScreen";
+import ProfileScreen from "./components/tuiter/ProfileScreen";
 
 function App() {
     return (
-        // sets up the base mechanism to navigate between multiple components
         <BrowserRouter>
             <div className="container">
-                {/* To navigate between components we use the Route component from React Router to declare paths and map them to corresponding component we want to render for that path.*/}
                 <Routes>
-                    <Route path="/hello"
-                           exact={true}
-                           element={<HelloWorld/>}/>
-                    <Route path="/"
-                           exact={true}
-                           element={<Labs/>}/>
-                    <Route path="/tuiter/home"
-                           exact={true}
-                           element={<HomeScreen/>}/>
-                    <Route path="/tuiter/bookmarks" element={<Bookmarks/>}/>
+                    <Route path="/">
+                        <Route path="labs"
+                               element={<Labs/>}/>
+                        <Route path="hello"
+                               element={<HelloWorld/>}/>
+                        <Route path="tuiter"
+                               element={<Tuiter/>}>
+                            <Route index
+                                   element={<HomeScreen/>}/>
+                            <Route path="explore"
+                                   element={<ExploreScreen/>}/>
+                            <Route path="profile"
+                                   element={<ProfileScreen/>}/>
+                            {/*<Route path="notifications"*/}
+                            {/*       element={<NotificationScreen/>}/>*/}
 
-                    <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
-
+                        </Route>
+                    </Route>
                 </Routes>
-                {/*<HelloWorld/>*/}
-                {/*<Index/>*/}
-                {/*<Index/>*/}
-                {/*<h1>Hello World!</h1>*/}
             </div>
         </BrowserRouter>
     );
 }
+
+
+// function App() {
+//     return (
+//         // sets up the base mechanism to navigate between multiple components
+//         <BrowserRouter>
+//             <div className="container">
+//                 {/* To navigate between components we use the Route component from React Router to declare paths and map them to corresponding component we want to render for that path.*/}
+//                 <Routes>
+//                     <Route path="/hello"
+//                            exact={true}
+//                            element={<HelloWorld/>}/>
+//                     <Route path="/"
+//                            exact={true}
+//                            element={<Labs/>}/>
+//                     <Route path="/tuiter/home"
+//                            exact={true}
+//                            element={<HomeScreen/>}/>
+//                     <Route path="/tuiter/bookmarks" element={<Bookmarks/>}/>
+//
+//                     <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
+//
+//                 </Routes>
+//                 {/*<HelloWorld/>*/}
+//                 {/*<Index/>*/}
+//                 {/*<Index/>*/}
+//                 {/*<h1>Hello World!</h1>*/}
+//             </div>
+//         </BrowserRouter>
+//     );
+// }
 
 export default App;
 

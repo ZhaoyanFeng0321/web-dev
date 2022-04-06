@@ -10,13 +10,13 @@ const PostItem = ({tuit}) => {
     return (
         <>
             <li className="list-group-item wd-tuit-item d-flex">
-                <div className=" d-flex">
+                <img
+                    src={tuit.author.profileImgSrc}
+                    className="wd-post__profileImage"
+                />
+                <div className="wd-full-width">
 
-                    <img
-                        src={tuit.author.profileImgSrc}
-                        className="wd-post__profileImage"
-                    />
-                    <div >
+                    <div>
                         <div className=" mb-2">
 
                             <p className="wd-post__annotations wd-full-width ">

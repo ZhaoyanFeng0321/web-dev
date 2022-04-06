@@ -8,7 +8,7 @@ const NavigationSidebar = (
             <div>
                 <div className="d-none d-xxl-block">
                     <div className="list-group">
-                        <Link to="/HomeScreen/index"
+                        <Link to="/home-screen/index"
                            className="list-group-item list-group-item-action">
                             <i className="fab fa-twitter fa-lg"></i>
                         </Link>

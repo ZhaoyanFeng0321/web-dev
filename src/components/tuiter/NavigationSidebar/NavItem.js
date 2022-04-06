@@ -6,7 +6,7 @@ const NavItem = ({
     return (
 
         <Link to={link.path}
-              className={`list-group-item list-group-item-action                            className="list-group-item list-group-item-action wd-list-group-item-override">
+              className="list-group-item list-group-item-action wd-list-group-item-override">
  ${active === link.label
    ? 'active' : ''}`}>
             <i className={link.icon}></i>

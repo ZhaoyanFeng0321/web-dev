@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
-import NavigationSidebar from "./NavigationSidebar";
+import NavigationSidebar from "../../../src/components/tuiter/NavigationSidebar";
 import whoReducer from "./reducers/who-reducer";
 import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";

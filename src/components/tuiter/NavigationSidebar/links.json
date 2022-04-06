@@ -1,10 +1,10 @@
 [
-  {"label": "Home", "icon": "fas fa-home", "href": "home.html", "path": "/tuiter/"},
-  {"label": "Explore", "icon": "fas fa-hashtag ", "href": "explore.html", "path": "/tuiter/explore"},
-  {"label": "Notifications", "icon": "fas fa-bell", "href": "notifications.html", "path": "/tuiter/notifications"},
-  {"label": "Messages", "icon": "fas fa-inbox", "href": "messages.html", "path": "/tuiter/messages"},
-  {"label": "Bookmarks", "icon": "fas fa-bookmark ", "href": "bookmarks.html", "path": "/tuiter/bookmarks"},
-  {"label": "Lists", "icon": "fas fa-list-ul", "href": "lists.html", "path": "/tuiter/lists"},
-  {"label": "Profile", "icon": "fas fa-user", "href": "profile.html", "path": "/tuiter/profile"},
-  {"label": "More", "icon": "fa fa-ellipsis-h fa-inverse", "href": "more.html", "path": "/tuiter/more"}
+  {"label": "Home", "icon": "fas fa-home",  "path": ""},
+  {"label": "Explore", "icon": "fas fa-hashtag ",  "path": "explore"},
+  {"label": "Notifications", "icon": "fas fa-bell",  "path": "notifications"},
+  {"label": "Messages", "icon": "fas fa-inbox",  "path": "messages"},
+  {"label": "Bookmarks", "icon": "fas fa-bookmark ",  "path": "bookmarks"},
+  {"label": "Lists", "icon": "fas fa-list-ul",  "path": "lists"},
+  {"label": "Profile", "icon": "fas fa-user",  "path": "profile"},
+  {"label": "More", "icon": "fa fa-ellipsis-h fa-inverse",  "path": "more"}
 ]

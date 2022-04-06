@@ -1,0 +1,19 @@
+.wd-tuit-avatar-image {
+    max-width: 48px;
+    border-radius: 10px;
+}
+.wd-full-width {
+    width: 100%;
+}
+.wd-whats-happening-text {
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.wd-color-gray {
+    color: rgb(116, 124, 130);
+}
+
+.wd-color-red {
+    color: rgb(232, 36, 92);
+}
